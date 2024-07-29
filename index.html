@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Calculadora IMC</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JS -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <noscript>O JavaScript está desativado em seu navegador!</noscript>
+
+    <!-- Header -->
+    <header>
+        <h1>Calculadora IMC (kg/m²)</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="about">
+            O Índice de Massa Corpórea (IMC) é calculado dividindo o peso (em <em>kg</em>) pela altura ao quadrado (em <em>m</em>).<br />
+            Onde a classificação do IMC é determinada da seguinte forma:<br />
+            <div class="legend">
+            • Abaixo do peso: IMC < 18.5<br />
+            • Peso normal: 18.5 ≤ IMC < 24.9<br />
+            • Sobrepeso: 25 ≤ IMC < 29.9<br />
+            • Obesidade: IMC ≥ 30
+            </div>
+        </div>
+
+        <form>
+            <div>
+                <label for="weight">Peso:</label>
+                <input type="number" id="weight" placeholder="Ex: 75.5"> kg
+            </div>
+            <div>
+                <label for="height">Altura:</label>
+                <input type="number" id="height" placeholder="Ex: 1.75"> m
+            </div>
+            <hr style="width: 400px;" />
+            <div>
+                <label for="result">IMC:</label>
+                <input type="text" id="result" disabled>
+            </div>
+            <div>
+                <label for="classification">Classificação:</label>
+                <input type="text" id="classification" disabled>
+            </div>
+            <button type="button" onclick="calculateIMC()">Calcular</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>by Tadeu Jerônimo</p>
+    </footer>
+</body>
+
+</html>

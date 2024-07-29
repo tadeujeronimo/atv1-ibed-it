@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  background-color: darkcyan;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, main, footer {
+  text-align: center;
+}
+
+#weight, #height, #result, #classification, label, button {
+  font-weight: bold;
+}
+
+#result {
+  color: black;
+}
+
+main {
+  margin-top: 30px; 
+  font-size: 18px;
+}
+
+.about {
+  margin-bottom: 20px;
+}
+
+.legend {
+  background-color: lightskyblue;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+input, button, .legend {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+input {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: lightgray;
+}
