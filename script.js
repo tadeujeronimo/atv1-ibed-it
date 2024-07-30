@@ -6,8 +6,8 @@ function calculateIMC() {
   // Obtenha o valor do campo de entrada "height"
   let height = document.getElementById("height").value;
 
-  // Verifique se ambos os campos não estão vazios
-  if (weight && height) {
+  // Verifique se ambos os campos não estão vazios e não são zero
+  if (weight && height && weight > 0 && height > 0) {
     // Verifique se a altura não contém ponto ou vírgula
     if (!height.includes(".") && !height.includes(",")) {
       // Converta para inteiro e divida por 100 para converter cm para metros
